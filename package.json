@@ -7,18 +7,27 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:seed": "node ./prisma/seed.js"
   },
   "dependencies": {
-    "@vueuse/nuxt": "^10.7.2",
+    "@faker-js/faker": "^8.4.1",
+    "@prisma/client": "^5.9.1",
+    "jsonwebtoken": "^9.0.2",
     "nuxt": "^3.10.1",
     "vue": "^3.4.15",
-    "vue-router": "^4.2.5"
+    "vue-router": "^4.2.5",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.4",
     "@nuxtjs/tailwindcss": "^6.11.4",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@vueuse/nuxt": "^10.7.2",
     "eslint": "^8.56.0",
+    "prisma": "^5.9.1",
     "typescript": "^5.3.3"
   }
 }
