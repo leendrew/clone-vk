@@ -1,12 +1,12 @@
 # VK Clone
 
 ~~[Deployed]()~~
+[DB Schema]()
 
 ## Stack
 
 - Vue 3
 - Nuxt 3
-- NuxtUI
 - TailwindCSS
 
 ## Installation
@@ -14,7 +14,7 @@
 ### dev
 
 ```bash
-cp .env.example .env.local
+cp .env.example .env
 pnpm i
 pnpm dev
 ```
@@ -22,7 +22,7 @@ pnpm dev
 ### prod
 
 ```bash
-cp .env.example .env.production
+cp .env.example .env
 pnpm i --frozen-lockfile
 pnpm build && pnpm preview
 ```
