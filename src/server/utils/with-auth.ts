@@ -8,7 +8,7 @@ export function withAuth() {
 
     const authHeader = getHeader(event, 'Authorization');
     if (!authHeader) {
-      throw createError({ statusCode: 401 });
+      throw unauthorizedException();
     }
 
     const [, token] = authHeader.split(' ');
